@@ -1,0 +1,3 @@
+﻿  LeetCode.cpp
+D:\Program Files (x86)\claus\C++\LeetCode\LeetCode\LongestConsecutiveSequence.h(16,16): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  LeetCode.vcxproj -> D:\Program Files (x86)\claus\C++\LeetCode\x64\Debug\LeetCode.exe
