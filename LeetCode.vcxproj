@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="LongestConsecutiveSequence.cpp" />
+    <ClCompile Include="ThreeSum.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LongestConsecutiveSequence.h" />
+    <ClInclude Include="ThreeSum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
