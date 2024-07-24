@@ -1,7 +1,6 @@
 ﻿#include <vector>
 #include <iostream>
-#include "LongestConsecutiveSequence.h"
-#include "ThreeSum.h"
+#include "ValidParentheses.h"
 using namespace std;
 
 
@@ -14,11 +13,10 @@ using namespace std;
 
 
 
-int main() {
-    vector<int> nums{ -1,0,1,2,-1,-4 };
-    ThreeSum suma;
-    suma.sum3(nums);
-   
-    return 0;
+int main()
+{
+	ValidParentheses valid;
+	if (valid.isValid("(]")) cout << "true" << endl; else cout << "false" << endl;
+	return 0;
 }
 
