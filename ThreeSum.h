@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include <iostream>
+#include <algorithm>
 
 using namespace std;
 class ThreeSum
@@ -8,7 +8,7 @@ class ThreeSum
 public:
     vector<vector<int>> sum3(vector<int>& nums) {
         vector<int> nums2;
-
+        sort(nums.begin(), nums.end());
         for (int i = 0; i < (nums.size() - 2); i++)
         {
             for (int j = i; j < (nums.size() - 1); j++)
@@ -37,15 +37,25 @@ public:
             {
                 a[i][j] = nums2[j + (3 * i)];
             }
-        cout << "udal ulement" << endl;
-        for (int i = 0; i < stroki; i++) // Цикл, который идёт по строкам
+        for (int i = 0; i < (stroki - 1); i++)
         {
-            for (int j = 0; j < 3; j++) // Цикл, который идёт по элементам
-                cout << a[i][j] << ' '; // Вывод элементов i строки вектора
-            cout << endl;
+            for (int j = 0; j < stroki; j++)
+            {
+                if (i !=j && j>i)
+                {
+
+                    if (a[i] == a[j]) {
+                        auto iterA = a.cbegin();
+                        a.erase(iterA + i);
+                        i = 0;
+                        j = 0;
+                        stroki = a.size();
+
+                }
+                }
+
+            }
         }
-
-
         return a;
     }
 };
