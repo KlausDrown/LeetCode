@@ -1,7 +1,7 @@
 ﻿#include <vector>
 #include <iostream>
-#include "LongestConsecutiveSequence.h"
-#include "ThreeSum.h"
+#include "RomanToInteger.h"
+
 using namespace std;
 
 
@@ -15,10 +15,8 @@ using namespace std;
 
 
 int main() {
-    vector<int> nums{ -1,0,1,2,-1,-4 };
-    ThreeSum suma;
-    suma.sum3(nums);
-   
+    RomanToInteger rom;
+    cout << rom.romanToInt("LVIII");
     return 0;
 }
 

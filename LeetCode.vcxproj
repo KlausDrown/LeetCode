@@ -129,11 +129,15 @@
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="LongestConsecutiveSequence.cpp" />
+    <ClCompile Include="RomanToInteger.cpp" />
     <ClCompile Include="ThreeSum.cpp" />
+    <ClCompile Include="ValidParentheses.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LongestConsecutiveSequence.h" />
+    <ClInclude Include="RomanToInteger.h" />
     <ClInclude Include="ThreeSum.h" />
+    <ClInclude Include="ValidParentheses.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
