@@ -10,26 +10,27 @@ using namespace std;
 class MergeTwoSortedLinkedLists
 {
 public:
-    ListNode* mergeTwoLists(ListNode* list1 /*ListNode* list2*/) {
-        ListNode* NEXT = NULL;
-        ListNode* curr(0);
-        ListNode* ToRETURN = curr;
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        /*ListNode* NEXT = list1;*/
+        ListNode ToRETURN(0);
+        ListNode* curr = &ToRETURN;
 
-        for(int i=0; i <4; i++)
+        while ((list1 != NULL) && (list2 != NULL))
         {
-            if (true/*list1->val > list2->val*/)
+            if (list1->val > list2->val)
             {
                 curr->next = list1;
-                curr = list1;
                 list1 = list1->next;
                 
             }
             else
             {
-
+                curr->next = list2;
+                list2 = list2->next;
             }
+            curr = curr->next;
         }
-        return curr;
+        return ToRETURN.next;
     }
 };
 
