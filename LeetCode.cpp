@@ -1,8 +1,10 @@
 ﻿#include <vector>
 #include <iostream>
-#include "RomanToInteger.h"
-
+#include "MyLibrary\LinkedList\MergeTwoSortedLinkedLists.h"
+#include "MyLibrary\LinkedList\ListNide.h"
 using namespace std;
+
+//Definition for singly-linked list.
 
 
 
@@ -15,8 +17,7 @@ using namespace std;
 
 
 int main() {
-    RomanToInteger rom;
-    cout << rom.romanToInt("LVIII");
+
     return 0;
 }
 
