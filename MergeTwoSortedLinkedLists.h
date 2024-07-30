@@ -11,7 +11,6 @@ class MergeTwoSortedLinkedLists
 {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        /*ListNode* NEXT = list1;*/
         ListNode ToRETURN;
         ListNode* curr = &ToRETURN;
 
