@@ -1,20 +1,7 @@
 ﻿#include <vector>
 #include <iostream>
-#include "MyLibrary\LinkedList\MergeTwoSortedLinkedLists.h"
-#include "MyLibrary\LinkedList\ListNide.h"
+#include "MyLibrary\Task5_MinStack\MinStack.h"
 using namespace std;
-
-//Definition for singly-linked list.
-
-
-
-
-
-
-
-
-
-
 
 int main() {
 
