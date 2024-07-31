@@ -8,44 +8,43 @@ private:
     bool NewExit = true;
 public:
 
-    MinStack() {  
 
-    };
-    void push(int vallue) { 
+    void push(int vallue) {
         MyStack.push_back(vallue);
         if (NewExit) minval.push_back(MyStack.back());
+        if (minval.size() == 0) minval.push_back(MyStack.back());
+        if (NewExit)
+        {
 
-        if (minval.back() >= MyStack.back() && !NewExit) 
+        }
+        else if (minval[minval.size() - 1] >= MyStack[MyStack.size() - 1] || NewExit)
         {
             minval.push_back(MyStack.back());
         }
         NewExit = false;
-        
-
-        
     }
 
-    void pop() { 
+    void pop() {
         auto iter = MyStack.cbegin();
         auto iter2 = minval.cbegin();
-        if (minval.back() == MyStack.back())
+        if (minval[minval.size() - 1] == MyStack[MyStack.size() - 1])
         {
-            minval.erase(iter2 + minval.size()-1);
+            minval.erase(iter2 + minval.size() - 1);
             auto iter2 = minval.cbegin();
-            MyStack.erase(iter + MyStack.size()-1);
+            MyStack.erase(iter + MyStack.size() - 1);
             auto iter = MyStack.cbegin();
         }
         else {
-            MyStack.erase(iter + MyStack.size()-1);
+            MyStack.erase(iter + MyStack.size() - 1);
             auto iter = MyStack.cbegin();
         }
     }
 
-    int top() {  
-        return MyStack.back();
+    int top() {
+        return MyStack[MyStack.size() - 1];
     }
 
-    int getMin() { 
-        return minval.back();
+    int getMin() {
+        return minval[minval.size() - 1];
     }
 };
