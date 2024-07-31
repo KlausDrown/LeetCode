@@ -3,8 +3,8 @@
 using namespace std;
 class MinStack {
 private:
-    vector<int> MyStack;
-    vector<int> minval;
+    vector<long int> MyStack;
+    vector<long int> minval;
     bool NewExit = true;
 public:
 
