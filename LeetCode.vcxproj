@@ -130,6 +130,7 @@
     <ClCompile Include="LeetCode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyLibrary\Task5_MinStack\MinStack.h" />
     <ClInclude Include="MyLibrary\LinkedList\ListNide.h" />
     <ClInclude Include="MyLibrary\Task1_LongestConsecutiveSequence\LongestConsecutiveSequence.h" />
     <ClInclude Include="MyLibrary\LinkedList\MergeTwoSortedLinkedLists.h" />
