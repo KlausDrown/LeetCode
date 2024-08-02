@@ -1,12 +1,13 @@
 #pragma once
 #include <vector>
 #include <algorithm>
-
+/* the solution is working but Time Limit Exceeded */
+/*Solution For https://leetcode.com/problems/3sum/submissions/1341311096/ */
 using namespace std;
 class ThreeSum
 {
 public:
-    vector<vector<int>> sum3(vector<int>& nums) {
+    vector<vector<int>> threeSum(vector<int>& nums) {
         vector<int> nums2;
         sort(nums.begin(), nums.end());
         for (int i = 0; i < (nums.size() - 2); i++)

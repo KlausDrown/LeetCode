@@ -1,6 +1,6 @@
 #pragma once
 using namespace std;
-
+/* to work with linked lists */
 class ListNode
 {
 public:

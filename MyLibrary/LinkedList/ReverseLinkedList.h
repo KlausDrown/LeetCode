@@ -1,9 +1,8 @@
 
-  //Definition for singly-linked list.
 
  
 class ReverseLinkedList
 {
-
+	/*the task has been disassembled*/
 };
 
