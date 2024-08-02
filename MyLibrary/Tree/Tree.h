@@ -1,4 +1,5 @@
-struct TreeNode { /* For working with trees */
+class TreeNode { /* For working with trees */
+public:
 	int val;
 	TreeNode* left;
 	TreeNode* right;
