@@ -1,8 +1,6 @@
 #include <string>
 #include <unordered_map>
 #include <iostream>
-/*давно не кодил, решил немного перед сном поиграться с leedcode */
-
 /* https://leetcode.com/problems/roman-to-integer/description/ */
 
 using namespace std;
